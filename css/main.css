@@ -30,7 +30,7 @@ body {
 }
 .container {
   background-color: hsl(218deg, 23%, 16%);
-  height: 98vh;
+  height: 98.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
