@@ -1,0 +1,109 @@
+@use '../abstracts/' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: $neutral-dark-blue;
+    text-align: center;
+    font-size: .8rem;
+    color: $neutral-grayish-blue;
+
+    a {
+        color: $primary-cyan;
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: $main-font;
+}
+
+// Media Queries 
+
+@media only screen and (max-width: 550px) {
+  #dice-button {
+    transform: translateX(-20%);
+  }
+
+  .advice-quote {
+    max-width: 100%;
+  }
+}
+
+.container {
+    background-color: $neutral-dark-blue;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    background-color: $neutral-grayish-dark-blue;
+    padding: 4rem 2rem;
+    max-width: 500px;
+    height: auto;
+
+    .advice-number {
+        color: $primary-neon-green;
+        font-size: .85rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
+    .advice-quote {
+        color: $primary-cyan;
+        max-width: 90%;
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+#dice-button {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    left: 44%;
+    bottom: -11%;
+    cursor: pointer;
+    border: 0;
+    border-radius: 100%;
+    padding: 18px;
+    background-color: $primary-neon-green;
+    transition: .4s ease-out;
+
+    &:hover {
+        box-shadow: 0px 0px 30px $primary-neon-green;
+        filter: brightness(120%);
+        transition: .4s ease-out;
+    }
+}
+
+#dice-button img {
+    height: 100%;
+    width: 100%;
+}
+
