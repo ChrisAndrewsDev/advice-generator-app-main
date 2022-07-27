@@ -7,5 +7,5 @@ async function getQuote(){
     document.querySelector('#advice-quote').innerText = `“` + res.slip.advice + `”`
     document.querySelector('#adviceID').innerText =  res.slip.id 
 }
-
+getQuote();
 loadButton.addEventListener('click', getQuote);
